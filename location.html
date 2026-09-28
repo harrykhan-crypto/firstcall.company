@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>First Call Real Estate | Our Location</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #111;
+
+            color: white;
+
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+
+            width: 100%;
+
+            padding: 20px 8%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            background: #151515;
+
+        }
+
+
+        nav h2 {
+
+            color: #b8860b;
+
+        }
+
+
+        nav a {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+
+            text-decoration: none;
+
+            padding: 10px 20px;
+
+            border: 1px solid #9b7004;
+
+            border-radius: 25px;
+
+            transition: 0.3s;
+
+        }
+
+
+        nav a:hover {
+
+            background: #b8860b;
+
+            color: white;
+
+        }
+
+
+        /* =========================
+           LOCATION HERO
+        ========================= */
+
+        .location-hero {
+
+            text-align: center;
+
+            padding: 80px 20px 40px;
+
+        }
+
+
+        .location-hero > span {
+
+            color: #b8860b;
+
+            letter-spacing: 3px;
+
+            font-weight: bold;
+
+        }
+
+
+        .location-hero h1 {
+
+            font-size: 55px;
+
+            margin: 20px 0;
+
+        }
+
+
+        /* EXACT ADDRESS CARD */
+
+        .exact-address {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 18px;
+
+            margin: 25px auto;
+
+            padding: 20px 30px;
+
+            text-align: left;
+
+            border: 1px solid rgba(184, 134, 11, 0.6);
+
+            border-radius: 18px;
+
+            background: linear-gradient(
+
+                135deg,
+
+                rgba(184, 134, 11, 0.18),
+
+                rgba(255, 255, 255, 0.04)
+
+            );
+
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+
+        }
+
+
+        .exact-address > span {
+
+            font-size: 35px;
+
+        }
+
+
+        .exact-address strong {
+
+            color: #d4a017;
+
+            font-size: 21px;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        .exact-address p {
+
+            margin-top: 7px;
+
+            color: #bbb;
+
+            font-size: 16px;
+
+        }
+
+
+        .location-hero > p {
+
+            color: #aaa;
+
+            font-size: 18px;
+
+            margin-top: 20px;
+
+        }
+
+
+        /* =========================
+           MAP
+        ========================= */
+
+        .map-container {
+
+            width: 84%;
+
+            height: 550px;
+
+            margin: 40px auto;
+
+            border-radius: 25px;
+
+            overflow: hidden;
+
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+        }
+
+
+        .map-container iframe {
+
+            width: 100%;
+
+            height: 100%;
+
+            border: none;
+
+        }
+
+        /* =========================
+           LOCATION INFORMATION
+        ========================= */
+
+        .location-info {
+
+            text-align: center;
+
+            padding: 30px 20px 80px;
+
+        }
+
+
+        .location-info h2 {
+
+            font-size: 30px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .location-info p {
+
+            color: #aaa;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        /* GOOGLE MAP BUTTON */
+
+        .open-map-btn {
+
+            display: inline-block;
+
+            padding: 15px 30px;
+
+            background: #f40f0f;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 30px;
+
+            transition: 0.3s;
+
+        }
+
+
+        .open-map-btn:hover {
+
+            transform: scale(1.05);
+
+            background: #d4a017;
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            .location-hero h1 {
+
+                font-size: 38px;
+
+            }
+
+
+            .map-container {
+
+                width: 92%;
+
+                height: 450px;
+
+            }
+
+
+            .exact-address {
+
+                width: 90%;
+
+                text-align: left;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav>
+
+        <h2>FIRST CALL REAL ESTATE</h2>
+
+        <a href="index.html">
+
+            ← BACK TO HOME
+
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         LOCATION HERO
+    ========================= -->
+
+    <section class="location-hero">
+
+        <span>📍ITS EASY TO FIND US</span>
+
+        <h1>OUR LOCATION</h1>
+
+
+        <div class="exact-address">
+
+            <span>📍</span>
+
+
+            <div>
+
+                <strong>FIRST CALL REAL ESTATE</strong>
+
+                <p>Armour Colony, Manki Road</p>
+
+                <p>Nowshera, Pakistan</p>
+
+                <p>Phase IV</p>
+
+                <p>📞0333-9073281</p>
+
+            </div>
+
+        </div>
+
+
+        <p>
+
+            WE WILL BE VERY HAPPY TO SEE YOU.
+            IT'S EASY TO FIND US, AND WE ARE ALWAYS READY TO HELP YOU FIND THE PERFECT PROPERTY.
+
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         EXACT MAP
+    ========================= -->
+
+    <div class="map-container">
+
+        <iframe
+
+            src="https://www.google.com/maps?q=33.974676,71.994127&z=17&output=embed"
+
+            loading="lazy"
+
+            allowfullscreen>
+
+        </iframe>
+
+    </div>
+
+
+    <!-- =========================
+         LOCATION INFORMATION
+    ========================= -->
+
+    <section class="location-info">
+
+        <h2>📍 Come Visit Us, Be Our Guest</h2>
+
+        <p>
+
+            We are always ready to help you find the perfect property.
+
+        </p>
+
+
+        <a
+
+            href="https://www.google.com/maps/place/First+Call+Real+Estate/@33.9714687,71.980984,15.28z/data=!4m15!1m8!3m7!1s0x38ded36c42a9fe5f:0xebffbb0ce10e40f!2sArmour+Colony,+Nowshera,+Pakistan!3b1!8m2!3d33.9734091!4d71.9831079!16s%2Fg%2F1td5_2vr!3m5!1s0x38ded30009cfa569:0x9e6bfffdb6c39c86!8m2!3d33.974676!4d71.994127!16s%2Fg%2F11zckvj4sz"
+
+            target="_blank"
+
+            class="open-map-btn">
+
+            Click Here To Open Exact Location in Google Maps →
+
+        </a>
+
+    </section>
+
+
+</body>
+</html>
